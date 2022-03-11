@@ -1,0 +1,74 @@
+openapi: 3.0.0
+info:
+  title: Product price
+  version: '1.0'
+servers:
+  - url: 'http://localhost:8080'
+paths:
+  /prices/brand/{brandId}/product/{productId}:
+    parameters:
+      - in: path
+        name: brandId
+        schema:
+          type: integer
+          format: int32
+        required: true
+        example: 1
+      - in: path
+        name: productId
+        schema:
+          type: integer
+          format: int64
+        required: true
+        example: 35455
+      - in: query
+        name: applicationDate
+        schema:
+          type: string
+          format: date-time
+        required: true
+        example: '2021-12-15T18:10:40.987Z'
+    get:
+      tags:
+        - price
+      operationId: getProductPrice
+      summary: Product price
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductPrice'
+              example:
+                productId: 35455
+                brandId: 1
+                rateId: 4
+                price: 38.95
+                startDate: '2021-12-15T00:00:00.000Z'
+                endDate: '2021-12-15T23:59:59.999Z'
+        '404':
+          description: Price not found
+components:
+  schemas:
+    ProductPrice:
+      description: 'Product price'
+      type: object
+      properties:
+        productId:
+          type: integer
+          format: int64
+        brandId:
+          type: integer
+          format: int32
+        rateId:
+          type: integer
+          format: int32
+        price:
+          type: number
+        startDate:
+          type: string
+          format: date-time
+        endDate:
+          type: string
+          format: date-time
