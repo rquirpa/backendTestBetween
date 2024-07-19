@@ -1,6 +1,6 @@
 package com.example.demo.infrastructure.http.mapper;
 
-import com.example.demo.domain.model.ProductPrice;
+import com.example.demo.domain.entity.ProductPrice;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

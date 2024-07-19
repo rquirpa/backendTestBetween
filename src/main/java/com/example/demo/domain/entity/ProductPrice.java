@@ -1,4 +1,4 @@
-package com.example.demo.domain.model;
+package com.example.demo.domain.entity;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;

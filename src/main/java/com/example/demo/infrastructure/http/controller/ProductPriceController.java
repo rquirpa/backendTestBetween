@@ -1,6 +1,6 @@
 package com.example.demo.infrastructure.http.controller;
 
-import com.example.demo.domain.service.ProductPriceService;
+import com.example.demo.application.service.ProductPriceService;
 import com.example.demo.infrastructure.http.api.PricesApi;
 import com.example.demo.infrastructure.http.mapper.ProductPriceMapper;
 import com.example.demo.infrastructure.http.model.ProductPrice;

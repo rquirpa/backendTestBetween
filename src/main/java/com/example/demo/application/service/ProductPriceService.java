@@ -1,10 +1,10 @@
-package com.example.demo.domain.service;
+package com.example.demo.application.service;
 
 import static org.springframework.util.ObjectUtils.isEmpty;
 
-import com.example.demo.domain.exception.NotFoundException;
-import com.example.demo.domain.repository.PriceRepository;
-import com.example.demo.domain.model.ProductPrice;
+import com.example.demo.application.exception.NotFoundException;
+import com.example.demo.application.port.repository.PriceRepository;
+import com.example.demo.domain.entity.ProductPrice;
 import java.time.OffsetDateTime;
 import org.springframework.stereotype.Service;
 

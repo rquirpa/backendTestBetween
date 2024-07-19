@@ -1,4 +1,4 @@
-package com.example.demo.domain.service;
+package com.example.demo.application.service;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -9,9 +9,9 @@ import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.example.demo.domain.exception.NotFoundException;
-import com.example.demo.domain.model.ProductPrice;
-import com.example.demo.domain.repository.PriceRepository;
+import com.example.demo.application.exception.NotFoundException;
+import com.example.demo.domain.entity.ProductPrice;
+import com.example.demo.application.port.repository.PriceRepository;
 import com.github.javafaker.Faker;
 import java.time.OffsetDateTime;
 import org.junit.jupiter.api.BeforeEach;

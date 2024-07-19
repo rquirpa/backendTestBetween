@@ -1,7 +1,7 @@
 package com.example.demo.infrastructure.database.repository;
 
-import com.example.demo.domain.model.ProductPrice;
-import com.example.demo.domain.repository.PriceRepository;
+import com.example.demo.domain.entity.ProductPrice;
+import com.example.demo.application.port.repository.PriceRepository;
 import com.example.demo.infrastructure.database.mapper.ProductPriceMapper;
 import com.example.demo.infrastructure.database.repository.jpa.PriceJPA;
 import java.time.OffsetDateTime;

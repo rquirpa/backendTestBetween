@@ -2,7 +2,7 @@ package com.example.demo.infrastructure.http;
 
 import static java.util.Collections.singletonMap;
 
-import com.example.demo.domain.exception.NotFoundException;
+import com.example.demo.application.exception.NotFoundException;
 import java.util.Map;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

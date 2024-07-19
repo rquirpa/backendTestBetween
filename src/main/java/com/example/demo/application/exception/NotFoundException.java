@@ -1,4 +1,4 @@
-package com.example.demo.domain.exception;
+package com.example.demo.application.exception;
 
 public class NotFoundException extends RuntimeException {
 

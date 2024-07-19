@@ -3,7 +3,7 @@ package com.example.demo.infrastructure.database.repository;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.example.demo.date.DateUtil;
-import com.example.demo.domain.model.ProductPrice;
+import com.example.demo.domain.entity.ProductPrice;
 import java.time.OffsetDateTime;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

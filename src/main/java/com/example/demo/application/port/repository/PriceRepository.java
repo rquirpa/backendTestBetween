@@ -1,6 +1,6 @@
-package com.example.demo.domain.repository;
+package com.example.demo.application.port.repository;
 
-import com.example.demo.domain.model.ProductPrice;
+import com.example.demo.domain.entity.ProductPrice;
 import java.time.OffsetDateTime;
 
 public interface PriceRepository {
